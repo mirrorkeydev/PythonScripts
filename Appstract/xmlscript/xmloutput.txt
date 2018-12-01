@@ -85,6 +85,10 @@
 <item>maps</item>
 <item>memos</item>
 <item>messages</item>
+<item>microsoft_one_note</item>
+<item>microsoft_outlook</item>
+<item>microsoft_powerpoint</item>
+<item>microsoft_word</item>
 <item>minecraft</item>
 <item>mint</item>
 <item>music</item>
