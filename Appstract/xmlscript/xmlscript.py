@@ -1,4 +1,13 @@
-#lists all of the icons I have already created in the format needed for the app
+"""
+Given: a local directory filled with png icons in the format airbnb.png, etc
+
+Return: a text file with all icons' filenames in the xml format:
+
+        <item>airbnb</item>
+        <item>bing</item>
+        <item>chrome</item>
+        ...
+"""
 
 import os,sys
 

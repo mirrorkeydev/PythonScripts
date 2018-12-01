@@ -77,9 +77,8 @@ def getColor(path): #returns either a dominant color (roygbp) or None
         #then classify greatestkey as either r, o, y, g, b, or p
         hue = round(rgb2hsv(greatestkey[0],greatestkey[1],greatestkey[2])[0])
         sat = round(rgb2hsv(greatestkey[0],greatestkey[1],greatestkey[2])[1]*100)
-        print(hue)
 
-        if sat < 10:
+        if sat <= 15:
             return "gray"
         elif hue >= 0 and hue < 9:
             return "red"

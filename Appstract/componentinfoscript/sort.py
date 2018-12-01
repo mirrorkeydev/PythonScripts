@@ -1,7 +1,21 @@
-#takes a large unsorted list of appcodes in the form
-# <item component="ComponentInfo{...}" drawable="zowi" />
-# and sorts them by their drawable tag (in this case, "zowi")
-# then outputs them to a new text file
+"""
+Given: a large unsorted text file of appcodes in the form:
+ 
+    <item component="ComponentInfo{...}" drawable="zowi" />
+    <item component="ComponentInfo{...}" drawable="other" />
+    <item component="ComponentInfo{...}" drawable="zowi" />
+    ...
+
+Return: a text file with all appcodes grouped and sorted by drawable tag:
+
+        <!--zowi-->
+        <item component="ComponentInfo{...}" drawable="zowi" />
+        <item component="ComponentInfo{...}" drawable="zowi" />
+
+        <!--other-->
+        <item component="ComponentInfo{...}" drawable="other" />
+        ...
+"""
 
 import os
 
