@@ -1,13 +1,26 @@
-#reads the dominant color of an image 
-#(relies on images with few colors)
-#then, creates xml file labels based off them
+"""
+Given: a local directory filled with png icons, having mostly 1-4 colors
+
+Perform: analysis returning the dominant color of the icon, categorizing it
+as either red, orange, yellow, green, blue, purple, or gray
+
+Return: a text file with the icons organized by color in the xml format:
+        -------------red-------------
+        <item>nameofredicon</item>
+        <item>youtube</item>
+        <item>netflix</item>
+        ...
+"""
+
 import PIL, os, sys
 from PIL import Image
 import colorsys
 
-os.chdir("C:\\Users\\Melanie\\Documents\\GitHub\\Appstract\\app\\src\\main\\res\\drawable-nodpi")
+os.chdir("C:\\Users\\Melanie\\Documents\\GitHub\\Appstract\\app\\src\\main\\res\\drawable-nodpi") #this is the local directory with icons
 
-def rgb2hsv(r, g, b):
+#---------------FUNCTIONS---------------
+
+def rgb2hsv(r, g, b): #converts rgb to hsv
     r, g, b = r/255.0, g/255.0, b/255.0
     mx = max(r, g, b)
     mn = min(r, g, b)
@@ -36,7 +49,7 @@ def getMaxNum(d): #returns key and value with the greates value in a tuple
             maxkey = key
     return (maxkey,maximum)
 
-def getColor(path): #returns either a dominant color (roygbp) or None if there's too many to pick a dominant
+def getColor(path): #returns either a dominant color (roygbp) or None
     data = list(PIL.Image.open(path, mode='r').getdata()) #returns iterable object with pixel rgba values
     d = {} #will contain {(color): howmanypixels, i.e. (255,255,255): 3, (0,0,0):23, ... etc}
 
@@ -60,11 +73,10 @@ def getColor(path): #returns either a dominant color (roygbp) or None if there's
         if key != greatestkey:
             allothervalues += d[key]
 
-    if greatestvalue*0.5 > allothervalues: #if more than half of the picture is a
+    if greatestvalue*0.5 > allothervalues: #if more than half of the icon is filled with a single color a
         #then classify greatestkey as either r, o, y, g, b, or p
         hue = round(rgb2hsv(greatestkey[0],greatestkey[1],greatestkey[2])[0])
         sat = round(rgb2hsv(greatestkey[0],greatestkey[1],greatestkey[2])[1]*100)
-        print(hue)
 
         if sat < 10:
             return "gray"
@@ -80,19 +92,42 @@ def getColor(path): #returns either a dominant color (roygbp) or None if there's
             return "blue"
         elif hue >= 225 and hue < 265:
             return "purple"
-
-    else:
+        else:
+            return "red"
+    else: #less than half of the icon is a single color; thus, the icon cannot be categorized
         return None
-
 
 #-------CLASSIFY THE ICONS-------
 
-red, orange, yellow, green, blue, purple = ([] for i in range(6))
+colors = {"red": [], "orange":[] , "yellow":[] , "green":[] , "blue":[] , "purple":[], "gray":[]}
 
 directory =  os.listdir() #returns all the filenames
 
 for name in directory:
-    print("----------")
     print(name)
-    print(getColor(name)) #appends onto the current directory
-    # sort them into lists
+    if getColor(name) == "red":
+        colors["red"].append(name)
+    elif getColor(name) == "orange":
+        colors["orange"].append(name)
+    elif getColor(name) == "yellow":
+        colors["yellow"].append(name)
+    elif getColor(name) == "green":
+        colors["green"].append(name)
+    elif getColor(name) == "blue":
+        colors["blue"].append(name)
+    elif getColor(name) == "purple":
+        colors["purple"].append(name)
+    elif getColor(name) == "gray":
+        colors["gray"].append(name)
+
+#-------GENERATE THE XML LISTS-----
+
+f = open("C:\\Users\\Melanie\\Documents\\GitHub\\PythonScripts\\Appstract\\colorsensor\\xmloutputcolors.txt","w+")
+
+for color in colors:
+    f.write("\n\n-------------" + str(color) + "-------------\n")
+    for i in range(len(colors[color])): #loop through each sorted name in each color
+        temp = colors[color][i][0:(len(colors[color][i]))-4]
+        f.write("\n<item>" + str(temp) + "</item>")
+
+f.close()
