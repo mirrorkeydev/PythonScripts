@@ -26,11 +26,7 @@ for svg in dirs:
     newfile = open("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg, "a+") 
 
     for line in oldfile:
-        if ((line.find("stroke:#") != -1 or line.find("fill:#") != -1) and 
-            line[line.find(":#")+2] == "0" and line[line.find(":#")+3] == "0" and 
-            line[line.find(":#")+4] == "0" and line[line.find(":#")+5] == "0" and 
-            line[line.find(":#")+6] == "0" and line[line.find(":#")+7] == "0"):
-            #case: this line contains details regarding a #000000 element
+        if re.search(r"stroke:#0{6}", line) or re.search(r"fill:#0{6}", line):
             
             templine = "" #will contain the edited line
             zerosindexes = [m.start() for m in re.finditer("000000", line)] #indexes of the first 0 in 000000 after an ":#"
