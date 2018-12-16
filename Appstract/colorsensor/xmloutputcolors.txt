@@ -5,23 +5,29 @@
 <item>airbnb</item>
 <item>ali_express</item>
 <item>autodesk_pixlr</item>
+<item>boomerang_instagram</item>
 <item>candy_crush</item>
 <item>clock</item>
 <item>clue</item>
 <item>db_navigator</item>
 <item>depop</item>
+<item>flipboard</item>
 <item>gmail</item>
 <item>google_fit</item>
 <item>google_plus</item>
 <item>instagram</item>
 <item>last_pass</item>
 <item>last_pass_authenticator</item>
+<item>life_360</item>
 <item>lyft</item>
 <item>maps</item>
 <item>music</item>
 <item>netflix</item>
+<item>opera</item>
 <item>pinterest</item>
+<item>pocketcasts</item>
 <item>pokemongo</item>
+<item>retrica</item>
 <item>sound_recorder</item>
 <item>target</item>
 <item>vodafone</item>
@@ -31,15 +37,20 @@
 -------------orange-------------
 
 <item>accu_weather</item>
+<item>autodesk_sketchbook</item>
 <item>canvas</item>
+<item>castbox</item>
 <item>etsy</item>
 <item>fire_tv</item>
 <item>headspace</item>
 <item>microsoft_powerpoint</item>
 <item>osu_mobile</item>
+<item>patreon</item>
 <item>reddit</item>
+<item>sleep_cycle</item>
 <item>soundcloud</item>
 <item>tinder</item>
+<item>vlc</item>
 
 -------------yellow-------------
 
@@ -49,6 +60,7 @@
 <item>flashlight</item>
 <item>google_keep</item>
 <item>google_slides</item>
+<item>grindr</item>
 <item>memos</item>
 <item>snapchat</item>
 
@@ -59,17 +71,21 @@
 <item>bitmoji</item>
 <item>browser</item>
 <item>desmos</item>
+<item>deviant_art</item>
 <item>downloads</item>
 <item>duo_mobile</item>
 <item>evernote</item>
+<item>google_classroom</item>
 <item>google_sheets</item>
 <item>hangouts</item>
 <item>hulu</item>
 <item>khan_academy</item>
+<item>line</item>
 <item>play_games</item>
 <item>pocketcamp</item>
 <item>spotify</item>
 <item>studentvue</item>
+<item>transit</item>
 <item>vine</item>
 <item>whatsapp</item>
 <item>xbox</item>
@@ -83,8 +99,10 @@
 <item>bing</item>
 <item>calendar</item>
 <item>chase</item>
+<item>compass</item>
 <item>dashlane</item>
 <item>dictionary_com</item>
+<item>dropbox</item>
 <item>duo</item>
 <item>facebook</item>
 <item>facebook_lite</item>
@@ -105,6 +123,7 @@
 <item>messages</item>
 <item>microsoft_outlook</item>
 <item>microsoft_word</item>
+<item>mx_player</item>
 <item>my_fitness_pal</item>
 <item>pandora</item>
 <item>paypal</item>
@@ -112,13 +131,17 @@
 <item>reddit_is_fun</item>
 <item>runtastic</item>
 <item>settings</item>
+<item>share_it</item>
 <item>shazam</item>
+<item>skype</item>
 <item>steam</item>
+<item>substratum</item>
 <item>swift_key</item>
 <item>telegram</item>
 <item>tumblr</item>
 <item>twitter</item>
 <item>venmo</item>
+<item>vudu</item>
 <item>weather</item>
 
 -------------purple-------------
@@ -131,12 +154,18 @@
 <item>quizlet</item>
 <item>roku</item>
 <item>twitch</item>
+<item>viber</item>
 
 -------------gray-------------
 
+<item>bose_connect</item>
 <item>camera</item>
 <item>google_authenticator</item>
+<item>limbo</item>
+<item>poweramp</item>
 <item>square_cash</item>
+<item>telegram_x</item>
 <item>uber</item>
+<item>vsco_cam</item>
 <item>wikipedia</item>
 <item>wilson_app</item>
