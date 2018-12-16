@@ -1,6 +1,6 @@
 ## Explanations of the various subprojects
 ### Appstract (Icon Pack)
-Building an icon pack requires processing and formatting a lot of data. Below are scripts I've written in order to automate processing this data. Each directory holds both the script and input(when possible) and output files.
+Building an icon pack requires processing and formatting a lot of data. Below are scripts I've written in order to automate processing this data. Each directory holds both the script and input and output files (when possible).
 #### - colorsensor
 This directory holds a script that analyzes the dominant color of icons I designed held in a local directory, and then generates an xml-style text file grouping the icons by color.
 #### - componentinfoscript
