@@ -15,38 +15,42 @@ os.chdir("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\F - Inkscape Files"
 dirs = os.listdir()
 
 for svg in dirs:
-    print(svg)
-    oldfile = open(svg, "rt").readlines() #open the old svg
-    
-    #need to delete old version since the file will be opened in append mode 
-    if os.path.exists("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg): 
-        os.remove("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg)
-    
-    #where the edited svg will go
-    newfile = open("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg, "a+") 
+    #if there isn't already a white-lined version in the destination folder
+    if not os.path.exists("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg): 
+        print(svg)
+        oldfile = open(svg, "rt").readlines() #open the old svg
+        
+        #use chunk below ONLY IF you plan on overwriting white-lined files
+        #need to delete old version since the file will be opened in append mode 
+        
+        #if os.path.exists("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg): 
+        #    os.remove("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg)
+        
+        #where the edited svg will go
+        newfile = open("C:\\Users\\Melanie\\Google Drive\\MISC\\Appstract\\WhiteInkscape\\" + svg, "a+") 
 
-    for line in oldfile:
-        if re.search(r"stroke:#0{6}", line) or re.search(r"fill:#0{6}", line):
-            
-            templine = "" #will contain the edited line
-            zerosindexes = [m.start() for m in re.finditer("000000", line)] #indexes of the first 0 in 000000 after an ":#"
-            zerosindexesall = [] #indexes of all 0's in a "000000"
+        for line in oldfile:
+            if re.search(r"stroke:#0{6}", line) or re.search(r"fill:#0{6}", line):
+                
+                templine = "" #will contain the edited line
+                zerosindexes = [m.start() for m in re.finditer("000000", line)] #indexes of the first 0 in 000000 after an ":#"
+                zerosindexesall = [] #indexes of all 0's in a "000000"
 
-            for index in zerosindexes:
-                zerosindexesall.append(index)
-                for i in range(6): #the first 0 of 000000 is indexed, but we need to add the other 5 indexes
-                    zerosindexesall.append(index + i)
+                for index in zerosindexes:
+                    zerosindexesall.append(index)
+                    for i in range(6): #the first 0 of 000000 is indexed, but we need to add the other 5 indexes
+                        zerosindexesall.append(index + i)
 
-            for i in range(len(line)): #replacing the 0's with f's
-                if i in zerosindexesall:
-                    templine += "f"
-                else:
-                    templine += line[i]
+                for i in range(len(line)): #replacing the 0's with f's
+                    if i in zerosindexesall:
+                        templine += "f"
+                    else:
+                        templine += line[i]
 
-            newfile.write(templine)
+                newfile.write(templine)
 
-        else:
-            #case: this line is not relevent to an #000000 element
-            newfile.write(line)
+            else:
+                #case: this line is not relevent to an #000000 element
+                newfile.write(line)
 
-    newfile.close()
+        newfile.close()
