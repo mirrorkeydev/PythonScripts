@@ -1,201 +1,222 @@
 
-<item>accu_weather</item>
-<item>airbnb</item>
-<item>alexa</item>
-<item>ali_express</item>
-<item>allo</item>
-<item>amazon</item>
-<item>amazon_drive</item>
-<item>amazon_music</item>
-<item>amazon_prime_video</item>
-<item>amdroid</item>
-<item>android_auto</item>
-<item>android_pay</item>
-<item>apple_music</item>
-<item>app_logo</item>
-<item>autodesk_pixlr</item>
-<item>autodesk_sketchbook</item>
-<item>bank</item>
-<item>barcode_scanner</item>
-<item>bhim</item>
-<item>bing</item>
-<item>bitmoji</item>
-<item>boomerang_instagram</item>
-<item>bose_connect</item>
-<item>browser</item>
-<item>calculator</item>
-<item>calendar</item>
-<item>camera</item>
-<item>candy_crush</item>
-<item>canvas</item>
-<item>castbox</item>
-<item>chase</item>
-<item>chrome</item>
-<item>clock</item>
-<item>clue</item>
-<item>compass</item>
-<item>contacts</item>
-<item>dashlane</item>
-<item>db_navigator</item>
-<item>depop</item>
-<item>desmos</item>
-<item>deviant_art</item>
-<item>dictionary_com</item>
-<item>discord</item>
-<item>dolby</item>
-<item>downloads</item>
-<item>dropbox</item>
-<item>duckduckgo</item>
-<item>duo</item>
-<item>duo_mobile</item>
-<item>ebay</item>
-<item>etsy</item>
-<item>evernote</item>
-<item>facebook</item>
-<item>facebook_lite</item>
-<item>facebook_messenger</item>
-<item>facebook_messenger_lite</item>
-<item>facetune</item>
-<item>feed_me</item>
-<item>filemanager</item>
-<item>firefox</item>
-<item>fire_tv</item>
-<item>firsttech</item>
-<item>fitbit</item>
-<item>flashlight</item>
-<item>flickr</item>
-<item>flipboard</item>
-<item>f_watch</item>
-<item>gallery</item>
-<item>gmail</item>
-<item>google</item>
-<item>google_authenticator</item>
-<item>google_classroom</item>
-<item>google_docs</item>
-<item>google_drive</item>
-<item>google_earth</item>
-<item>google_files</item>
-<item>google_fit</item>
-<item>google_keep</item>
-<item>google_lens</item>
-<item>google_one</item>
-<item>google_opinion_rewards</item>
-<item>google_photos</item>
-<item>google_plus</item>
-<item>google_podcasts</item>
-<item>google_sheets</item>
-<item>google_slides</item>
-<item>google_translate</item>
-<item>grindr</item>
-<item>groupme</item>
-<item>hangouts</item>
-<item>headspace</item>
-<item>hulu</item>
-<item>ifttt</item>
-<item>inbox</item>
-<item>instagram</item>
-<item>jabong</item>
-<item>joey</item>
-<item>kahoot</item>
-<item>khan_academy</item>
-<item>kindle</item>
-<item>last_pass</item>
-<item>last_pass_authenticator</item>
-<item>life_360</item>
-<item>limbo</item>
-<item>line</item>
-<item>linked_in</item>
-<item>lyft</item>
-<item>magisk</item>
-<item>mail</item>
-<item>maps</item>
-<item>memos</item>
-<item>messages</item>
-<item>microsoft_one_note</item>
-<item>microsoft_outlook</item>
-<item>microsoft_powerpoint</item>
-<item>microsoft_word</item>
-<item>minecraft</item>
-<item>mint</item>
-<item>muse_score</item>
-<item>music</item>
-<item>mx_player</item>
-<item>myntra</item>
-<item>my_fitness_pal</item>
-<item>netflix</item>
-<item>nova</item>
-<item>oculus</item>
-<item>ookla_speedtest</item>
-<item>opera</item>
-<item>osu_mobile</item>
-<item>pandora</item>
-<item>patreon</item>
-<item>paypal</item>
-<item>phone</item>
-<item>pinterest</item>
-<item>play_books</item>
-<item>play_developer_console</item>
-<item>play_games</item>
-<item>play_movies</item>
-<item>play_music</item>
-<item>play_newsstand</item>
-<item>play_store</item>
-<item>pocketcamp</item>
-<item>pocketcasts</item>
-<item>pokemongo</item>
-<item>poweramp</item>
-<item>qr_code_reader</item>
-<item>quizlet</item>
-<item>quora</item>
-<item>reddit</item>
-<item>reddit_is_fun</item>
-<item>retrica</item>
-<item>roku</item>
-<item>runtastic</item>
-<item>sensors_multitool</item>
-<item>settings</item>
-<item>share_it</item>
-<item>shazam</item>
-<item>skwrt</item>
-<item>skype</item>
-<item>sky_scanner</item>
-<item>slack</item>
-<item>sleep_cycle</item>
-<item>snapchat</item>
-<item>snapseed</item>
-<item>sonos</item>
-<item>soundcloud</item>
-<item>sound_recorder</item>
-<item>spotify</item>
-<item>square_cash</item>
-<item>steam</item>
-<item>studentvue</item>
-<item>substratum</item>
-<item>swift_key</item>
-<item>sync</item>
-<item>target</item>
-<item>telegram</item>
-<item>telegram_x</item>
-<item>tinder</item>
-<item>transit</item>
-<item>tumblr</item>
-<item>twitch</item>
-<item>twitter</item>
-<item>uber</item>
-<item>uber_eats</item>
-<item>venmo</item>
-<item>viber</item>
-<item>vine</item>
-<item>vlc</item>
-<item>vodafone</item>
-<item>vsco_cam</item>
-<item>vudu</item>
-<item>walmart</item>
-<item>weather</item>
-<item>wellsfargo</item>
-<item>whatsapp</item>
-<item>wikipedia</item>
-<item>wilson_app</item>
-<item>xbox</item>
-<item>youtube</item>
-<item>youtube_music</item>
+<item drawable ="accu_weather" />
+<item drawable ="airbnb" />
+<item drawable ="alexa" />
+<item drawable ="ali_express" />
+<item drawable ="allo" />
+<item drawable ="amazon" />
+<item drawable ="amazon_drive" />
+<item drawable ="amazon_music" />
+<item drawable ="amazon_prime_video" />
+<item drawable ="amdroid" />
+<item drawable ="android_auto" />
+<item drawable ="android_pay" />
+<item drawable ="apex_launcher" />
+<item drawable ="apple_music" />
+<item drawable ="app_logo" />
+<item drawable ="autodesk_pixlr" />
+<item drawable ="autodesk_sketchbook" />
+<item drawable ="bank" />
+<item drawable ="barcode_scanner" />
+<item drawable ="bhim" />
+<item drawable ="bing" />
+<item drawable ="bitmoji" />
+<item drawable ="blinkist" />
+<item drawable ="book_my_show" />
+<item drawable ="boomerang_instagram" />
+<item drawable ="bose_connect" />
+<item drawable ="browser" />
+<item drawable ="cakebrowser" />
+<item drawable ="calculator" />
+<item drawable ="calendar" />
+<item drawable ="camera" />
+<item drawable ="candy_crush" />
+<item drawable ="canvas" />
+<item drawable ="castbox" />
+<item drawable ="chase" />
+<item drawable ="chrome" />
+<item drawable ="chromealt" />
+<item drawable ="clock" />
+<item drawable ="clue" />
+<item drawable ="compass" />
+<item drawable ="contacts" />
+<item drawable ="dashlane" />
+<item drawable ="daylio" />
+<item drawable ="db_navigator" />
+<item drawable ="depop" />
+<item drawable ="desmos" />
+<item drawable ="deviant_art" />
+<item drawable ="dictionary_com" />
+<item drawable ="discord" />
+<item drawable ="dolby" />
+<item drawable ="doordash" />
+<item drawable ="downloads" />
+<item drawable ="dropbox" />
+<item drawable ="duckduckgo" />
+<item drawable ="duo" />
+<item drawable ="duo_mobile" />
+<item drawable ="ebay" />
+<item drawable ="etsy" />
+<item drawable ="evernote" />
+<item drawable ="facebook" />
+<item drawable ="facebook_lite" />
+<item drawable ="facebook_messenger" />
+<item drawable ="facebook_messenger_lite" />
+<item drawable ="facetune" />
+<item drawable ="feed_me" />
+<item drawable ="filemanager" />
+<item drawable ="firefox" />
+<item drawable ="fire_tv" />
+<item drawable ="firsttech" />
+<item drawable ="fitbit" />
+<item drawable ="flashlight" />
+<item drawable ="flickr" />
+<item drawable ="flipboard" />
+<item drawable ="forest" />
+<item drawable ="f_watch" />
+<item drawable ="gallery" />
+<item drawable ="gmail" />
+<item drawable ="google" />
+<item drawable ="google_authenticator" />
+<item drawable ="google_classroom" />
+<item drawable ="google_docs" />
+<item drawable ="google_drive" />
+<item drawable ="google_earth" />
+<item drawable ="google_files" />
+<item drawable ="google_fit" />
+<item drawable ="google_keep" />
+<item drawable ="google_lens" />
+<item drawable ="google_one" />
+<item drawable ="google_opinion_rewards" />
+<item drawable ="google_photos" />
+<item drawable ="google_plus" />
+<item drawable ="google_podcasts" />
+<item drawable ="google_sheets" />
+<item drawable ="google_slides" />
+<item drawable ="google_translate" />
+<item drawable ="grindr" />
+<item drawable ="groupme" />
+<item drawable ="groupon" />
+<item drawable ="grubhub" />
+<item drawable ="hangouts" />
+<item drawable ="headspace" />
+<item drawable ="hulu" />
+<item drawable ="ic_splash_screen" />
+<item drawable ="ifttt" />
+<item drawable ="inbox" />
+<item drawable ="instagram" />
+<item drawable ="jabong" />
+<item drawable ="joey" />
+<item drawable ="kahoot" />
+<item drawable ="khan_academy" />
+<item drawable ="kindle" />
+<item drawable ="last_pass" />
+<item drawable ="last_pass_authenticator" />
+<item drawable ="libby" />
+<item drawable ="life_360" />
+<item drawable ="limbo" />
+<item drawable ="line" />
+<item drawable ="linked_in" />
+<item drawable ="lyft" />
+<item drawable ="magisk" />
+<item drawable ="mail" />
+<item drawable ="maps" />
+<item drawable ="medium" />
+<item drawable ="memos" />
+<item drawable ="messages" />
+<item drawable ="microsoft_one_note" />
+<item drawable ="microsoft_outlook" />
+<item drawable ="microsoft_powerpoint" />
+<item drawable ="microsoft_word" />
+<item drawable ="minecraft" />
+<item drawable ="mint" />
+<item drawable ="muse_score" />
+<item drawable ="music" />
+<item drawable ="mx_player" />
+<item drawable ="myntra" />
+<item drawable ="my_fitness_pal" />
+<item drawable ="netflix" />
+<item drawable ="nova" />
+<item drawable ="oculus" />
+<item drawable ="oneoneoneone" />
+<item drawable ="ookla_speedtest" />
+<item drawable ="opera" />
+<item drawable ="osu_mobile" />
+<item drawable ="overdrive" />
+<item drawable ="pandora" />
+<item drawable ="patreon" />
+<item drawable ="paypal" />
+<item drawable ="phone" />
+<item drawable ="pinterest" />
+<item drawable ="play_books" />
+<item drawable ="play_developer_console" />
+<item drawable ="play_games" />
+<item drawable ="play_movies" />
+<item drawable ="play_music" />
+<item drawable ="play_newsstand" />
+<item drawable ="play_store" />
+<item drawable ="pocketcamp" />
+<item drawable ="pocketcasts" />
+<item drawable ="pokemongo" />
+<item drawable ="poweramp" />
+<item drawable ="puffin_browser" />
+<item drawable ="qr_code_reader" />
+<item drawable ="quizlet" />
+<item drawable ="quora" />
+<item drawable ="reddit" />
+<item drawable ="reddit_is_fun" />
+<item drawable ="retrica" />
+<item drawable ="roku" />
+<item drawable ="runtastic" />
+<item drawable ="sensors_multitool" />
+<item drawable ="settings" />
+<item drawable ="share_it" />
+<item drawable ="shazam" />
+<item drawable ="skwrt" />
+<item drawable ="skype" />
+<item drawable ="sky_scanner" />
+<item drawable ="slack" />
+<item drawable ="sleep_cycle" />
+<item drawable ="smart_launcher" />
+<item drawable ="snapchat" />
+<item drawable ="snapseed" />
+<item drawable ="sonos" />
+<item drawable ="soundcloud" />
+<item drawable ="sound_recorder" />
+<item drawable ="spotify" />
+<item drawable ="square_cash" />
+<item drawable ="steam" />
+<item drawable ="studentvue" />
+<item drawable ="substratum" />
+<item drawable ="swift_key" />
+<item drawable ="sync" />
+<item drawable ="target" />
+<item drawable ="telegram" />
+<item drawable ="telegram_x" />
+<item drawable ="textra" />
+<item drawable ="tiktok" />
+<item drawable ="tinder" />
+<item drawable ="transit" />
+<item drawable ="tumblr" />
+<item drawable ="twitch" />
+<item drawable ="twitter" />
+<item drawable ="uber" />
+<item drawable ="uber_eats" />
+<item drawable ="venmo" />
+<item drawable ="viber" />
+<item drawable ="vikingnation" />
+<item drawable ="vine" />
+<item drawable ="vlc" />
+<item drawable ="vodafone" />
+<item drawable ="vsco_cam" />
+<item drawable ="vudu" />
+<item drawable ="walmart" />
+<item drawable ="weather" />
+<item drawable ="wellsfargo" />
+<item drawable ="whatsapp" />
+<item drawable ="wikipedia" />
+<item drawable ="wilson_app" />
+<item drawable ="xbox" />
+<item drawable ="yelp" />
+<item drawable ="youtube" />
+<item drawable ="youtube_music" />
