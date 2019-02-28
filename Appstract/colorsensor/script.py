@@ -6,17 +6,17 @@ as either red, orange, yellow, green, blue, purple, or gray
 
 Return: a text file with the icons organized by color in the xml format:
         -------------red-------------
-        <item>nameofredicon</item>
-        <item>youtube</item>
-        <item>netflix</item>
+        <item drawable ="nameofredicon" />
+        <item drawable = "youtube" />
+        <item drawable = "netflix" />
         ...
 """
 
-import PIL, os, sys
+import PIL, os, sys #pip install Pillow for PIL
 from PIL import Image
 import colorsys
 
-os.chdir("C:\\Users\\Melanie\\Documents\\GitHub\\Appstract\\app\\src\\main\\res\\drawable-nodpi") #this is the local directory with icons
+os.chdir("C:\\Users\\Melanie\\Documents\\Appstract\\candybar-sample-master\\app\\src\\main\\res\\drawable-nodpi") #this is the local directory with icons
 
 #---------------FUNCTIONS---------------
 
@@ -125,9 +125,9 @@ for name in directory:
 f = open("C:\\Users\\Melanie\\Documents\\GitHub\\PythonScripts\\Appstract\\colorsensor\\xmloutputcolors.txt","w+")
 
 for color in colors:
-    f.write("\n\n-------------" + str(color) + "-------------\n")
+    f.write("\n\n<category title =\"" + str(color) + "\" />")
     for i in range(len(colors[color])): #loop through each sorted name in each color
         temp = colors[color][i][0:(len(colors[color][i]))-4]
-        f.write("\n<item>" + str(temp) + "</item>")
+        f.write("\n<item drawable=\"" + str(temp) + "\" />")
 
 f.close()
