@@ -18,8 +18,7 @@ from google.auth.transport.requests import Request
 
 """
 TODO: (ranked: short-term -> long-term):
--create dictionary to track frequency of icon names
--get more than just the first icon requested from an email
+-investigate the mystery of the "" icon
 -make extracting the payload from the message more reliable (aka remove try/excepts)
 -create tuples to store requested icons like: ("Icon_Name", "com.icon.android/activities.Home")
     -requires writing another search function to extract the icon's implementation code
@@ -28,46 +27,115 @@ TODO: (ranked: short-term -> long-term):
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
-def getRequestName(decoded_payload):
-    #find the first requested icon name, using "CandyBar Version" to detect if it's a free request email
-    if "CandyBar Version" in decoded_payload and "Order Id" not in decoded_payload:
-        match = re.search("CandyBar Version[ \n]: \d.\d.\d-b4(\\\\n){1,3}", decoded_payload)
 
-        if match is not None:
-            #determines the location of the first letter of an icon
-            start = match.span()[1]
+"""
+Name: get_request_names()
+Parameters: decoded_payload, the body of a CandyBar request email
+Returns: a list of all icon names the function finds
+Purpose: Searches emails for the titles of icons that a user requested
+"""
+def get_request_names(decoded_payload):
+    icon_match = re.finditer("(\\\\n){2,3}", decoded_payload)
+    icons_iter = iter(icon_match)
+    icons = []
 
-            tempstr = ""
-            count = 0
-            currentchar = ""
 
-            #iterate from first letter to terminating "\n" or 20 characters, whichever comes first
-            while not(count > 20):
-                currentchar = str(decoded_payload[start + count])
+    for i in range(len(re.findall("(\\\\n){2,3}", decoded_payload))):
+        start = next(icons_iter).span()[1]
+        
+        if len(decoded_payload) - start < 10:
+            #the \\n is too close to the end of the string. ignore it.
+            break
 
-                #check for terminating "\n"
-                if currentchar == "\\":
-                    break
+        tempstr = ""
+        count = 0
+        currentchar = ""
 
-                tempstr += currentchar
-                count += 1
+        #iterate from first letter to terminating "\n" or 20 characters, whichever comes first
+        while not(count > 20):
+            currentchar = str(decoded_payload[start + count])
 
-            return(tempstr)
+            #check for terminating "\n"
+            if currentchar == "\\":
+                break
 
-        if match is None:
-            return("No match found")
+            tempstr += currentchar
+            count += 1
+    
+        icons.append(tempstr)
 
-    else:
-        return("Upon")
+    return icons
 
-def main():
+
+"""
+Name: update_frequencies()
+Parameters: icons - a list containing icon names, icon_frequency - the frequency dictionary
+Returns: n/a
+Purpose: adds the icon key to a dictionary, updating the value if it already exists 
+"""
+def update_frequencies(icons, icon_frequency):
+    for icon in icons:
+        if icon is not None:
+            if icon in icon_frequency:
+                icon_frequency[icon] += 1
+            else:
+                icon_frequency[icon] = 1
+        
+            #print (for funsies) the current frequency
+            print("Icon: " + "{:25}".format(str(icon)) + "Frequency: " + str(icon_frequency[icon]))
+
+
+"""
+Name: top_requests()
+Parameters: icon_frequency, the dictionary of "IconName": frequency
+Returns: n/a
+Purpose: prints the top x requested icons
+"""
+def top_requests(icon_frequency):
+    #next, destructively (swiss-cheesing the dictionary) linearly search for the x most requested icons
+    x = 0
+    while(True):
+        x = int(input("View the top x requested icons. x = "))
+        if x < len(icon_frequency):
+            break
+        print("x too large! Pick an x less than " + str(len(icon_frequency)))
+
+    maxkey = ""
+    ls = []
+
+    #this code has redundancies.
+    for i in range(x):
+        maxkey = ""
+        maxval = 0
+        for key, value in icon_frequency.items():
+            if value > maxval:
+                tup = (key, value)
+                if tup not in ls:
+                    maxkey = key
+                    maxval = value
+        temptuple = (maxkey, maxval)
+        ls.append(temptuple)
+        if maxkey in icon_frequency:
+            del icon_frequency[maxkey]
+
+    print(ls)
+
+
+"""
+Name: get_credentials()
+Parameters: n/a
+Returns: the credentials needed to call the Gmail API
+Purpose: retrieves stored credentials or asks the user to login to the Gmail account 
+"""
+def get_credentials():
     creds = None
+
     # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
+    # created automatically when the authorization flow completes for the first time.
     if os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as token:
             creds = pickle.load(token)
+
     # If there are no (valid) credentials available, let the user log in.
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
@@ -76,16 +144,34 @@ def main():
             flow = InstalledAppFlow.from_client_secrets_file(
                 'credentials.json', SCOPES)
             creds = flow.run_local_server()
+
         # Save the credentials for the next run
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
+        
+    return creds
 
+
+"""
+Name: main()
+Parameters: n/a
+Returns: n/a
+Purpose: driving code of the program; executes all functions 
+""" 
+def main():
+
+    print("Please be patient while the script gets itself set up :)")
+
+    #retrieve credentials
+    creds = get_credentials()
+
+    # create an API resource to interact with
     service = build('gmail', 'v1', credentials=creds)
 
-    # call the Gmail API
+    # call the Gmail API, retrieving the first page of emails
     response = service.users().messages().list(userId="me").execute()
 
-    # get every email in the inbox and store it in messages
+    # store those emails, then iterate through and store the subsequent pages of emails
     messages = []
     if "messages" in response:
         messages.extend(response["messages"])
@@ -96,25 +182,45 @@ def main():
         messages.extend(response['messages'])
 
     #now that we have all the messages, process them
+    icon_frequency = {}
+    invalid_email_streak = 0
+
     for message in messages:
         message_id = message["id"]
         
-        #get an individual message by its id
+        #using the message id, retrieve the full email from the server
         individual_message = service.users().messages().get(userId='me', id=str(message_id), format="full").execute()
 
-        #check if this is a free request email
+        #check if this email is a free request email
         if "CandyBar Version" in str(individual_message["snippet"]) and "Order Id" not in str(individual_message["snippet"]):
+            invalid_email_streak = 0
+
             #extract the body from the message, which is base64 encoded
             try:
                 payload = individual_message["payload"]["parts"][0]["parts"][0]["body"]["data"]
             except:
                 payload = individual_message["payload"]["parts"][0]["body"]["data"]
 
-        #decode the payload, giving the plain text body of the email
-        decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","")
+            #decode the payload, giving the plain text body of the email
+            decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","")
+            
+            #extract the name of the first request
+            icons = get_request_names(decoded_payload)
 
-        #extract the name of the first request
-        print(getRequestName(decoded_payload))
+            #update the frequency dictionary
+            update_frequencies(icons, icon_frequency)
+
+        #if there are too many emails in a row that don't conform to CandyBar's template, exist the process
+        if invalid_email_streak > 15:
+            break
+
+        else:
+            invalid_email_streak += 1
+
+    #print the final sorted view of the dictionary!
+    #print(sorted(icon_frequency, key=icon_frequency.get))
+
+    top_requests(icon_frequency)
 
 if __name__ == '__main__':
     main()
