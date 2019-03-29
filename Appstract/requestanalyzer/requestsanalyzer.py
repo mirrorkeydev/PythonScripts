@@ -12,22 +12,53 @@ import pickle
 import os.path
 import base64
 import re
-import pprint
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
 """
 TODO: (ranked: short-term -> long-term):
--investigate the mystery of the "" icon
 -make extracting the payload from the message more reliable (aka remove try/excepts)
--create tuples to store requested icons like: ("Icon_Name", "com.icon.android/activities.Home")
-    -requires writing another search function to extract the icon's implementation code
 """
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
+
+"""
+Name: get_request_code()
+Parameters: decoded_payload - the body of a CandyBar request email
+            start - the start index of an icon in decoded_payload
+Returns: the associated icon identifier string of an icon
+Purpose: For a given start index, find the identifier of an icon
+"""
+def get_request_code(decoded_payload, start):
+    tempcode = ""
+    count = 0
+    currentchar = ""
+    slash_n_found = False
+
+    #iterate from first "\n" to second "\n" or 130 characters, whichever comes first
+    while not(count > 130):
+        currentchar = str(decoded_payload[start + count])
+
+        #check for first "\n"
+        if currentchar == "\\" and not slash_n_found:
+            slash_n_found = True
+            #increment to get ahead of "\n"s "n"
+            count += 1
+        
+        #check for second "\n"
+        elif currentchar == "\\" and slash_n_found:
+            break
+
+        #if the character is between the first and second "\n"
+        elif slash_n_found:
+            tempcode += currentchar
+
+        count += 1
+    
+    return tempcode
 
 """
 Name: get_request_names()
@@ -63,7 +94,9 @@ def get_request_names(decoded_payload):
             count += 1
     
         if tempstr != "":
-            icons.append(tempstr)
+            code = get_request_code(decoded_payload, start)
+            tup = (tempstr, code)
+            icons.append(tup)
 
     return icons
 
@@ -75,15 +108,26 @@ Returns: n/a
 Purpose: adds the icon key to a dictionary, updating the value if it already exists 
 """
 def update_frequencies(icons, icon_frequency):
+    #structure of an icon_frequency entry:
+    #    "IconName":[iconfrequency, "Code1", "Code2", ...,]
+    #ex: "Youtube":[3, "com.google.yt/youtube.Activity", "com.google.yt/youtube.SplashAct"]
+
     for icon in icons:
         if icon is not None:
-            if icon in icon_frequency:
-                icon_frequency[icon] += 1
+            if icon[0] in icon_frequency:
+                icon_frequency[icon[0]][0] += 1
+
             else:
-                icon_frequency[icon] = 1
+                icon_frequency[icon[0]] = [1]
+            
+            if icon[1] not in icon_frequency[icon[0]]:
+                icon_frequency[icon[0]].append(icon[1])
         
             #print (for funsies) the current frequency
-            print("Icon: " + "{:25}".format(str(icon)) + "Frequency: " + str(icon_frequency[icon]))
+            print("Icon: " + "{:25}".format(str(icon[0])) + "Frequency: " + str(icon_frequency[icon[0]][0]))
+            
+            #for i in range(1, len(icon_frequency[icon[0]])):
+                #print(icon_frequency[icon[0]][i])
 
 
 """
@@ -108,21 +152,27 @@ def top_requests(icon_frequency):
     for i in range(x):
         maxkey = ""
         maxval = 0
+        maxinfo = ""
 
         #loop through the dictionary's items
         for key, value in icon_frequency.items():
-            if value > maxval:
+            if value[0] > maxval:
                 tup = (key, value)
 
                 #makes sure that the icon hasn't already been added to the top x
                 if tup not in ls:
                     maxkey = key
-                    maxval = value
-        temptuple = (maxkey, maxval)
+                    maxval = value[0]
+                    maxinfo = value 
+        temptuple = (maxkey, maxinfo)
         ls.append(temptuple)
 
-    pp = pprint.PrettyPrinter()
-    pp.pprint(ls)
+    #print results
+    for item in ls:
+        print("-------------------------------------------------------")
+        print("Icon: " + "{:25}".format(str(item[0])) + "Requested: " + "{:5}".format(str(item[1][0])))
+        for i in range(1,len(item[1])):
+            print(item[1][i])
 
 
 """
