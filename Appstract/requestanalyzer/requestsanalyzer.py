@@ -12,6 +12,7 @@ import pickle
 import os.path
 import base64
 import re
+import pprint
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -39,7 +40,6 @@ def get_request_names(decoded_payload):
     icons_iter = iter(icon_match)
     icons = []
 
-
     for i in range(len(re.findall("(\\\\n){2,3}", decoded_payload))):
         start = next(icons_iter).span()[1]
         
@@ -58,11 +58,12 @@ def get_request_names(decoded_payload):
             #check for terminating "\n"
             if currentchar == "\\":
                 break
-
+    
             tempstr += currentchar
             count += 1
     
-        icons.append(tempstr)
+        if tempstr != "":
+            icons.append(tempstr)
 
     return icons
 
@@ -92,7 +93,7 @@ Returns: n/a
 Purpose: prints the top x requested icons
 """
 def top_requests(icon_frequency):
-    #next, destructively (swiss-cheesing the dictionary) linearly search for the x most requested icons
+    #next, linearly search for the x most requested icons
     x = 0
     while(True):
         x = int(input("View the top x requested icons. x = "))
@@ -103,22 +104,25 @@ def top_requests(icon_frequency):
     maxkey = ""
     ls = []
 
-    #this code has redundancies.
+    #loop x times
     for i in range(x):
         maxkey = ""
         maxval = 0
+
+        #loop through the dictionary's items
         for key, value in icon_frequency.items():
             if value > maxval:
                 tup = (key, value)
+
+                #makes sure that the icon hasn't already been added to the top x
                 if tup not in ls:
                     maxkey = key
                     maxval = value
         temptuple = (maxkey, maxval)
         ls.append(temptuple)
-        if maxkey in icon_frequency:
-            del icon_frequency[maxkey]
 
-    print(ls)
+    pp = pprint.PrettyPrinter()
+    pp.pprint(ls)
 
 
 """
@@ -204,7 +208,7 @@ def main():
             #decode the payload, giving the plain text body of the email
             decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","")
             
-            #extract the name of the first request
+            #extract the names of the icon requests
             icons = get_request_names(decoded_payload)
 
             #update the frequency dictionary
