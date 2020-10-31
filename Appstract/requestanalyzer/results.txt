@@ -1,0 +1,547 @@
+TOP 100 ICONS:
+-------------------------------------------------------
+Icon: Call of Duty             Requested: 181
+<item component="ComponentInfo{com.activision.callofduty.shooter/com.tencent.tmgp.cod.PermissionGrantActivity}" drawable="call_of_duty"/>       
+<item component="ComponentInfo{com.garena.game.codm/com.tencent.tmgp.cod.PermissionGrantActivity}" drawable="call_of_duty"/>
+<item component="ComponentInfo{com.activision.callofduty.companion/com.activision.callofduty.companion.MainActivity}" drawable="call_of_duty"/> 
+-------------------------------------------------------
+Icon: Zoom                     Requested: 135
+<item component="ComponentInfo{us.zoom.videomeetings/com.zipow.videobox.LauncherActivity}" drawable="zoom"/>
+-------------------------------------------------------
+Icon: Appstract                Requested: 105
+<item component="ComponentInfo{com.melon.appstract.dark/com.melon.appstract.activities.SplashActivity}" drawable="appstract"/>
+<item component="ComponentInfo{com.melon.appstract/com.melon.appstract.activities.SplashActivity}" drawable="appstract"/>
+-------------------------------------------------------
+Icon: PhonePe                  Requested: 97   
+<item component="ComponentInfo{com.phonepe.app/com.phonepe.app.v4.nativeapps.splash.Navigator_SplashActivity}" drawable="phonepe"/>
+<item component="ComponentInfo{com.phonepe.app/com.phonepe.app.ui.activity.Navigator_MainActivity}" drawable="phonepe"/>
+-------------------------------------------------------
+Icon: Messages                 Requested: 95
+<item component="ComponentInfo{com.oneplus.mms/com.android.mms.ui.ConversationList}" drawable="messages"/>
+<item component="ComponentInfo{com.vinsmart.messaging/com.vinsmart.messaging.ui.conversationlist.ConversationListActivity}" drawable="messages"/>
+<item component="ComponentInfo{com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationList}" drawable="messages"/>
+-------------------------------------------------------
+Icon: Gallery                  Requested: 80
+<item component="ComponentInfo{gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.LaunchAcr}" drawable="gallery"/>
+<item component="ComponentInfo{com.tclhz.gallery/com.tcl.gallery.app.GalleryActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Orange}" drawable="gallery"/>
+<item component="ComponentInfo{cn.nubia.gallery3d/cn.nubia.gallery3d.app.Gallery}" drawable="gallery"/>
+<item component="ComponentInfo{com.tct.gallery3d/com.tct.gallery3d.app.PermissionActivity}" drawable="gallery"/>
+<item component="ComponentInfo{photo.gallery.apps/photo.gallery.apps.activities.StartActivity}" drawable="gallery"/>
+<item component="ComponentInfo{photo.view.hd.gallery/photo.view.hd.gallery.activity.WelcomeActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.zui.gallery/com.zui.gallery.app.GalleryActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Grey_black}" drawable="gallery"/>
+<item component="ComponentInfo{com.beresnevgames.gallerycoloringbook/com.unity3d.player.UnityPlayerActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.gionee.gallery/com.gionee.gallery.sb.app.GnGallery}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.SplashActivity.Yellow}" drawable="gallery"/>
+<item component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.VideoPlayerLauncher}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Blue}" drawable="gallery"/>
+<item component="ComponentInfo{cm.gallery.gallerypro/org.horaapps.leafpic.activities.SplashScreen}" drawable="gallery"/>
+<item component="ComponentInfo{com.android.gallery3d/com.sprd.gallery3d.app.VideoActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.ak.galleryadfree.video.photo.gallery/com.simplemobiletools.gallery.activities.SplashActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.mobsnake.verticalgallery/com.android.gallery3d.app.GalleryActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.nomotorola.MotGallery2/com.android.gallery3d.app.GalleryActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.android.gallery3d/com.sprd.gallery3d.app.NewVideoActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity}" drawable="gallery"/>        
+<item component="ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.TNGalleryActivity}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Orange}" drawable="gallery"/>
+<item component="ComponentInfo{com.simplemobiletools.gallery.pro/com.simplemobiletools.gallery.pro.activities.SplashActivity.Light_blue}" drawable="gallery"/>
+<item component="ComponentInfo{photo.album.galleryvault.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity}" drawable="gallery"/>       
+<item component="ComponentInfo{com.vyom.gallery/com.vyom.gallery.M}" drawable="gallery"/>
+-------------------------------------------------------
+Icon: Free Fire                Requested: 75   
+<item component="ComponentInfo{com.dts.freefireth/com.dts.freefireth.FFMainActivity}" drawable="free_fire"/>
+<item component="ComponentInfo{com.dts.freefireth.huawei/com.dts.freefireth.FFMainActivity}" drawable="free_fire"/>
+-------------------------------------------------------
+Icon: Camera                   Requested: 68
+<item component="ComponentInfo{com.android.camera/com.android.camera.view.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.mediatek.camera/com.mediatek.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.GoogleCamera.Wichaya/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.hmdglobal.app.camera/com.hmdglobal.app.camera.GuideActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.evenwell.camera2/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.myos.camera/com.myos.camera.activity.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.camera.galaxyx.s10/com.camera.function.main.privacy.CameraPrivacyActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.zui.camera/com.zui.camera.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.dual.GCam/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.tcl.camera/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.zui.cameragallery/com.zui.cameragallery.camera.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.hmdglobal.app.camera/com.hmdglobal.app.camera.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.lenovo.camera/com.android.camera.Camera}" drawable="camera"/>
+<item component="ComponentInfo{com.android.fpcamera3/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.transsion.camera/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.GoogleCamerb/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.tplink.camera/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.nextbit.camera/com.nextbit.camera.ui.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.mediatek.hz.camera/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{hd.camera.sticker.filter/com.coocent.camera10.activity.LaunchActivity}" drawable="camera"/>
+<item component="ComponentInfo{e2}" drawable="camera"/>
+<item component="ComponentInfo{ru.ok.android/ru.ok.android.ui.activity.main.OdklActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.razerzone.camera/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.android.camera3/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.motorola.cameraonemtk/com.motorola.camera.Camera}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.GoogleCameraTele/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.Pixel2Mod/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.GoogleCameraArc/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.VideoCamera}" drawable="camera"/>
+<item component="ComponentInfo{com.hmdglobal.camera2lite/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{jp.kyocera.camera/jp.kyocera.camera.activity.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.meizu.media.camera/com.meizu.media.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.GoogleCameraEng/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.selfieforphonex.oscamera/com.android.camera.activity.CameraActivity}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.GoogleCameraP3/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.android.camera/com.android.camera.CameraActivityWraper}" drawable="camera"/>
+<item component="ComponentInfo{com.android.camerabq/com.android.camera.CameraLauncher}" drawable="camera"/>
+<item component="ComponentInfo{com.google.android.Pixel3Mod/com.android.camera.CameraLauncher}" drawable="camera"/>
+-------------------------------------------------------
+Icon: MEGA                     Requested: 68
+<item component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.lollipop.ManagerActivityLollipop}" drawable="mega"/>
+-------------------------------------------------------
+Icon: Airtel                   Requested: 68
+<item component="ComponentInfo{com.myairtelapp/com.myairtelapp.activity.SplashScreenActivity}" drawable="airtel"/>
+<item component="ComponentInfo{com.myairtelapp/com.myairtelapp.activity.HomeActivity}" drawable="airtel"/>
+<item component="ComponentInfo{com.myairtelapp/com.myairtelapp.activity.OnboardingActivity}" drawable="airtel"/>
+-------------------------------------------------------
+Icon: Files                    Requested: 65
+<item component="ComponentInfo{com.google.android.documentsui/com.android.documentsui.LauncherActivity}" drawable="files"/>
+<item component="ComponentInfo{com.jrdcom.filemanager.bb/com.jrdcom.filemanager.activity.FileBrowserActivity}" drawable="files"/>
+<item component="ComponentInfo{com.meizu.filemanager/com.meizu.flyme.filemanager.activity.HomeActivity}" drawable="files"/>
+<item component="ComponentInfo{com.android.documentsui/com.android.documentsui.BqLauncherActivity}" drawable="files"/>
+-------------------------------------------------------
+Icon: Mobile Legends: Bang     Requested: 64
+<item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivityWithExtractor}" drawable="mobile_legends:_bang_"/>   
+<item component="ComponentInfo{com.mobile.legends/com.moba.unityplugin.MobaGameMainActivity}" drawable="mobile_legends:_bang_"/>
+-------------------------------------------------------
+Icon: FM Radio                 Requested: 63
+<item component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadioActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.android.fmradio/com.android.fmradio.InfinixFmMainActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FmMainActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.evenwell.fmradio/com.evenwell.fmradio.FMRadioActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.FMPlayer}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmMainActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.huaqin.FM/com.huaqin.FM.FM}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.asus.fmradio/com.asus.fmradio.FMRadio}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FMRadio}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmRadioActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.transsion.fmradio/com.transsion.fmradio.FmMainActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.motorola.mtkfmplayer/com.motorola.mtkfmplayer.ChangeThemeActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.miui.fm/com.miui.fmradio.FmActivity}" drawable="fm_radio"/>
+<item component="ComponentInfo{com.android.fmradio/com.android.fmradio.FmActivity}" drawable="fm_radio"/>
+-------------------------------------------------------
+Icon: Security                 Requested: 61
+<item component="ComponentInfo{com.miui.securitycenter/com.miui.securityscan.MainActivity}" drawable="security"/>
+<item component="ComponentInfo{com.meizu.safe/com.meizu.safe.SecurityMainActivity}" drawable="security"/>
+<item component="ComponentInfo{com.coloros.safecenter/com.coloros.safecenter.FakeActivity}" drawable="security"/>
+<item component="ComponentInfo{com.miui.securitycenter/com.miui.securitycenter.MainActivity}" drawable="security"/>
+<item component="ComponentInfo{com.netatmo.camera/com.netatmo.camera.CMDashActivity}" drawable="security"/>
+-------------------------------------------------------
+Icon: Contacts                 Requested: 57
+<item component="ComponentInfo{com.samsung.android.app.contacts/com.samsung.android.contacts.contactslist.PeopleActivity}" drawable="contacts"/>
+<item component="ComponentInfo{}" drawable="contacts"/>
+<item component="ComponentInfo{com.tct.contacts/com.android.contacts.activities.PeopleActivity}" drawable="contacts"/>
+<item component="ComponentInfo{com.android.contacts/com.android.dialer.app.DialtactsActivity}" drawable="contacts"/>
+<item component="ComponentInfo{com.oneplus.contacts/com.oneplus.contacts.activities.OPPeopleActivity}" drawable="contacts"/>
+<item component="ComponentInfo{ef}" drawable="contacts"/>
+-------------------------------------------------------
+Icon: Among Us                 Requested: 54
+<item component="ComponentInfo{com.innersloth.spacemafia/com.unity3d.player.UnityPlayerActivity}" drawable="among_us"/>
+-------------------------------------------------------
+Icon: Office                   Requested: 54
+<item component="ComponentInfo{org.chromium.webapk.afceacdeccd05df16/org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity}" drawable="office"/>
+<item component="ComponentInfo{com.microsoft.office.officehubrow/com.microsoft.office.officesuite.OfficeSuiteActivity}" drawable="office"/>     
+-------------------------------------------------------
+Icon: Mercado Libre            Requested: 50
+<item component="ComponentInfo{com.mercadolibre/com.mercadolibre.activities.SplashActivity}" drawable="mercado_libre"/>
+-------------------------------------------------------
+Icon: Clash Royale             Requested: 49
+<item component="ComponentInfo{com.supercell.clashroyale/com.supercell.titan.GameApp}" drawable="clash_royale"/>
+-------------------------------------------------------
+Icon: Clash of Clans           Requested: 49
+<item component="ComponentInfo{com.supercell.clashofclans/com.supercell.titan.GameApp}" drawable="clash_of_clans"/>
+-------------------------------------------------------
+Icon: Brawl Stars              Requested: 48
+<item component="ComponentInfo{com.supercell.brawlstars/com.supercell.brawlstars.GameApp}" drawable="brawl_stars"/>
+-------------------------------------------------------
+Icon: Game Space               Requested: 47
+<item component="ComponentInfo{com.oneplus.gamespace/com.oneplus.gamespace.ui.main.MainActivity}" drawable="game_space"/>
+<item component="ComponentInfo{com.coloros.gamespaceui/com.coloros.gamespaceui.activity.StartActivity}" drawable="game_space"/>
+<item component="ComponentInfo{com.coloros.gamespace/com.coloros.gamespace.activity.MainActivity}" drawable="game_space"/>
+<item component="ComponentInfo{com.coloros.gamespace/com.coloros.gamespace.activity.GameBoxActivity}" drawable="game_space"/>
+-------------------------------------------------------
+Icon: WhatsApp                 Requested: 47
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.1}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.32}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.0}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.0}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.68}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.aero/com.aero.3}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.29}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.50}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.0}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.2}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.46}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.22}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.24}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.whatsapp/com.whatsapp.Main0}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.fwhatsapp/com.whatsapp.Main}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp/com.gbwhatsapp.Main9}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.Main0}" drawable="whatsapp"/>
+<item component="ComponentInfo{com.gbwhatsapp3/com.gbwhatsapp3.Main22}" drawable="whatsapp"/>
+-------------------------------------------------------
+Icon: SMS Organizer            Requested: 47
+<item component="ComponentInfo{com.microsoft.android.smsorganizer/com.microsoft.android.smsorganizer.StartupActivity}" drawable="sms_organizer"/>
+-------------------------------------------------------
+Icon: Weather                  Requested: 45
+<item component="ComponentInfo{com.vivo.weather/com.vivo.weather.WeatherMain}" drawable="weather"/>
+<item component="ComponentInfo{com.coloros.weather/com.coloros.weather.OppoMainActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.coloros.weather2/com.coloros.weather.OppoMainActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.sec.android.daemonapp/com.samsung.android.weather.app.AppLauncherActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.moji.zuk/com.moji.zuk.CSplashScreen}" drawable="weather"/>
+<item component="ComponentInfo{fi.fmi.mobileweather/fi.fmi.mobileweather.MainActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.wea.climate.clock.widget/com.wea.climate.clock.widget.pages.SplashActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.huawei.android.totemweatherapp/com.huawei.android.totemweatherapp.WeatherHome}" drawable="weather"/>
+<item component="ComponentInfo{com.meizu.flyme.weather/com.meizu.flyme.weather.WeatherMainActivity}" drawable="weather"/>
+<item component="ComponentInfo{net.difer.weather/net.difer.weather.AMain}" drawable="weather"/>
+<item component="ComponentInfo{com.samruston.weather/com.samruston.weather.ui.MainActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.htc.Weather/com.htc.Weather.WeatherEntryAlias}" drawable="weather"/>
+<item component="ComponentInfo{}" drawable="weather"/>
+<item component="ComponentInfo{ru.yandex.weatherplugin/ru.yandex.weatherplugin.ui.activity.SplashActivity}" drawable="weather"/>
+<item component="ComponentInfo{com.fotoable.temperature.weather/com.fotoable.weather.view.acitivity.MainActivity}" drawable="weather"/>
+-------------------------------------------------------
+Icon: InShot                   Requested: 44
+<item component="ComponentInfo{com.camerasideas.instashot/com.camerasideas.instashot.DummyActivity}" drawable="inshot"/>
+-------------------------------------------------------
+Icon: Airbnb                   Requested: 41
+<item component="ComponentInfo{com.airbnb.android/com.airbnb.android.feat.homescreen.HomeActivity}" drawable="airbnb"/>
+<item component="ComponentInfo{com.airbnb.android/com.airbnb.android.feat.legacy.activities.HomeActivity}" drawable="airbnb"/>
+<item component="ComponentInfo{com.airbnb.android/com.airbnb.android.flavor.full.activities.HomeActivity}" drawable="airbnb"/>
+-------------------------------------------------------
+Icon: Canva                    Requested: 41
+<item component="ComponentInfo{com.canva.editor/com.canva.app.editor.splash.SplashActivity}" drawable="canva"/>
+-------------------------------------------------------
+Icon: Gaana                    Requested: 41
+<item component="ComponentInfo{com.gaana/com.gaana.SplashScreenActivity}" drawable="gaana"/>
+<item component="ComponentInfo{com.gaana/com.gaana.SplashScreenActivityMMX}" drawable="gaana"/>
+-------------------------------------------------------
+Icon: ShareMe                  Requested: 41
+<item component="ComponentInfo{com.xiaomi.midrop/com.xiaomi.midrop.SplashScreen}" drawable="shareme"/>
+-------------------------------------------------------
+Icon: VidMate                  Requested: 40
+<item component="ComponentInfo{com.nemo.vidmate/com.nemo.vidmate.WelcomeActivity}" drawable="vidmate"/>
+<item component="ComponentInfo{com.nemo.vidmate/com.nemo.vidmate.host.WelcomeActivity}" drawable="vidmate"/>
+-------------------------------------------------------
+Icon: Disney+                  Requested: 37
+<item component="ComponentInfo{com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity}" drawable="disney+"/>
+<item component="ComponentInfo{jp.co.disney.apps.gm.disneyvod/com.ascendon.disney.activity.DJLoaderActivity}" drawable="disney+"/>
+-------------------------------------------------------
+Icon: Mi Video                 Requested: 37
+<item component="ComponentInfo{com.miui.videoplayer/com.miui.video.global.app.LauncherActivity}" drawable="mi_video"/>
+-------------------------------------------------------
+Icon: Wynk Music               Requested: 37
+<item component="ComponentInfo{com.bsbportal.music/com.bsbportal.music.v2.features.main.ui.HomeActivity}" drawable="wynk_music"/>
+-------------------------------------------------------
+Icon: Assistant                Requested: 36
+<item component="ComponentInfo{com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivity}" drawable="assistant"/>
+<item component="ComponentInfo{com.vivo.PCTools/com.vivo.PCTools.MainActivity.IndicatorTabActivity}" drawable="assistant"/>
+-------------------------------------------------------
+Icon: YouTube Vanced           Requested: 36   
+<item component="ComponentInfo{com.vanced.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" drawable="youtube_vanced"/>
+-------------------------------------------------------
+Icon: Calculator               Requested: 35
+<item component="ComponentInfo{com.android2.calculator3/com.xlythe.calculator.material.Theme.Orange}" drawable="calculator"/>
+<item component="ComponentInfo{com.android.calculator2/com.android.calculator2.CalculatorSprd}" drawable="calculator"/>
+<item component="ComponentInfo{com.sonymobile.exactcalculator/com.sonymobile.exactcalculator.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{com.hld.anzenbokusucal/com.hld.anzenbokusu.calculator}" drawable="calculator"/>
+<item component="ComponentInfo{cn.nubia.calculator2.preset/cn.nubia.calculator2.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{com.iDailyapps.gallerylock.hidevideo.privacy/com.iDailyapps.gallerylock.hidevideo.privacy.CalculatorActivity}" drawable="calculator"/>
+<item component="ComponentInfo{co.fira.calculator.calculator_v2/co.fira.calculator.calculator_v2.MainActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.hld.anzenbokusufake/com.hld.anzenbokusu.calculator7}" drawable="calculator"/>
+<item component="ComponentInfo{all.in.one.calculator/app.calculator.ui.activities.feed.FeedActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.app.calculator.vault.hider/com.apktool.app.hider.icon_tag_calculator_plus}" drawable="calculator"/>
+<item component="ComponentInfo{secret.hide.calculator/secret.hide.calculator.CalculatorActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.transsion.calculator/com.transsion.calculator.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{com.hideitpro/com.hideitpro.CalculatorDisguiseEntryDefault}" drawable="calculator"/>
+<item component="ComponentInfo{my.android.procalc/my.android.calc.MainActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.tcl.calculator/com.tct.calculator.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{com.calculator.vault/com.calculator.vault.CalculatorActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.coloros.calculator/com.android.calculator2.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{all.in.one.calculator/all.in.one.calculator.ui.activities.NavigationActivity}" drawable="calculator"/>
+<item component="ComponentInfo{com.tct.calculator.bb/com.tct.calculator.Calculator}" drawable="calculator"/>
+<item component="ComponentInfo{com.android.bbkcalculator/com.android.bbkcalculator.Calculator}" drawable="calculator"/>
+-------------------------------------------------------
+Icon: Screen Recorder          Requested: 35
+<item component="ComponentInfo{com.miui.screenrecorder/com.miui.screenrecorder.activity.ScreenRecorderHomeActivity}" drawable="screen_recorder"/>
+<item component="ComponentInfo{com.kimcy929.screenrecorder/com.kimcy929.screenrecorder.activity.MainActivity}" drawable="screen_recorder"/>     
+-------------------------------------------------------
+Icon: Grab                     Requested: 35
+<item component="ComponentInfo{com.grabtaxi.passenger/com.grab.pax.newface.presentation.newface.NewFace}" drawable="grab"/>
+-------------------------------------------------------
+Icon: Clock                    Requested: 35
+<item component="ComponentInfo{co.fira.clock/co.fira.clock.MainActivity}" drawable="clock"/>
+<item component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.common.activity.ClockPackage}" drawable="clock"/>
+<item component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.TabletClockPackage}" drawable="clock"/>
+<item component="ComponentInfo{com.android.deskclock/com.android.deskclock.AlarmClock}" drawable="clock"/>
+<item component="ComponentInfo{com.transsion.deskclock/com.transsion.deskclock.DeskClock}" drawable="clock"/>
+<item component="ComponentInfo{com.htc.android.worldclock/com.htc.android.worldclock.WorldClockTabControl}" drawable="clock"/>
+<item component="ComponentInfo{com.wearabletech.clock.iap/com.android.clock.DeskClock}" drawable="clock"/>
+<item component="ComponentInfo{com.android.BBKClock/com.android.BBKClock.Timer}" drawable="clock"/>
+<item component="ComponentInfo{com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock}" drawable="clock"/>
+<item component="ComponentInfo{fr.mathis.clockdaydream/fr.mathis.clockdaydream.MainActivity}" drawable="clock"/>
+-------------------------------------------------------
+Icon: Swiggy                   Requested: 33
+<item component="ComponentInfo{in.swiggy.android/in.swiggy.android.activities.HomeActivityChristmas}" drawable="swiggy"/>
+<item component="ComponentInfo{in.swiggy.android/in.swiggy.android.activities.HomeActivity}" drawable="swiggy"/>
+<item component="ComponentInfo{org.chromium.webapk.a024f45ac499710f2/org.chromium.webapk.shell_apk.MainActivity}" drawable="swiggy"/>
+-------------------------------------------------------
+Icon: Poweramp                 Requested: 32
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.standard_adaptive}" drawable="poweramp"/>
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.white_round}" drawable="poweramp"/>
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.classic}" drawable="poweramp"/>
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.white_play_adaptive}" drawable="poweramp"/>
+<item component="ComponentInfo{com.maxmpz.audioplayer/com.maxmpz.audioplayer.black_play_adaptive}" drawable="poweramp"/>
+-------------------------------------------------------
+Icon: Lawnchair                Requested: 32
+<item component="ComponentInfo{ch.deletescape.lawnchair.plah/ch.deletescape.lawnchair.settings.ui.SettingsLauncherActivity}" drawable="lawnchair"/>
+<item component="ComponentInfo{ch.deletescape.lawnchair.plah/ch.deletescape.lawnchair.LawnchairLauncher}" drawable="lawnchair"/>
+<item component="ComponentInfo{ch.deletescape.lawnchair.plah/ch.deletescape.lawnchair.Launcher}" drawable="lawnchair"/>
+<item component="ComponentInfo{ch.deletescape.lawnchair.ci/ch.deletescape.lawnchair.LawnchairLauncher}" drawable="lawnchair"/>
+<item component="ComponentInfo{ch.deletescape.lawnchair.ci/ch.deletescape.lawnchair.settings.ui.SettingsLauncherActivity}" drawable="lawnchair"/>
+-------------------------------------------------------
+Icon: MyJio                    Requested: 32
+<item component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.DashboardActivity}" drawable="myjio"/>
+-------------------------------------------------------
+Icon: Calendar                 Requested: 31
+<item component="ComponentInfo{org.lineageos.etar/com.android.calendar.AllInOneActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.coloros.calendar/com.android.calendar.AllInOneActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.xiaomi.calendar/com.android.calendar.homepage.AllInOneActivity}" drawable="calendar"/>
+<item component="ComponentInfo{cn.nubia.calendar.preset/cn.nubia.calendar.AllInOneActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.periodapp.period/com.periodapp.period.SplashScreenActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.samsung.android.calendar/com.samsung.android.app.calendar.activity.MainActivity}" drawable="calendar"/>      
+<item component="ComponentInfo{com.android.calendar/com.meizu.flyme.calendar.AllInOneActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.skuld.calendario/com.skuld.calendario.ui.home.activity.MainActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.bbk.calendar/com.bbk.calendar.MainActivity}" drawable="calendar"/>
+<item component="ComponentInfo{com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Grey_black}" drawable="calendar"/>
+-------------------------------------------------------
+Icon: Flo                      Requested: 31
+<item component="ComponentInfo{org.iggymedia.periodtracker/org.iggymedia.periodtracker.activities.InitialActivity}" drawable="flo"/>
+-------------------------------------------------------
+Icon: Scanner                  Requested: 30
+<item component="ComponentInfo{com.xiaomi.scanner/com.xiaomi.scanner.app.ScanActivity}" drawable="scanner"/>
+<item component="ComponentInfo{com.miui.barcodescanner/com.miui.barcodescanner.activity.CaptureActivity}" drawable="scanner"/>
+-------------------------------------------------------
+Icon: POCO Launcher            Requested: 30
+<item component="ComponentInfo{com.mi.android.globallauncher/com.miui.home.launcher.SplashActivity}" drawable="poco_launcher"/>
+-------------------------------------------------------
+Icon: Phone                    Requested: 29
+<item component="ComponentInfo{com.oneplus.dialer/com.android.dialer.oneplus.activity.OPDialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.asus.dialer/com.android.contacts.activities.DialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.dialer/com.android.dialer.main.impl.MainActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.dialer/com.android.dialer.activities.DialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.sh.smart.caller/com.android.dialer.main.impl.MainActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.orange.phone/com.orange.phone.DialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.sonymobile.android.dialer/com.android.dialer.app.DialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.contacts/com.oneplus.contacts.activities.OPDialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.dialer/com.ontim.dialer.DialtactsActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.dialer/com.android.dialer.PeopleActivity}" drawable="phone"/>
+<item component="ComponentInfo{com.android.dialer/com.android.dialer.TwelveKeyDialer}" drawable="phone"/>
+-------------------------------------------------------
+Icon: Musicolet                Requested: 29
+<item component="ComponentInfo{in.krosbits.musicolet/in.krosbits.musicolet.MusicActivity}" drawable="musicolet"/>
+-------------------------------------------------------
+Icon: Shopee                   Requested: 29
+<item component="ComponentInfo{com.shopee.id/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+<item component="ComponentInfo{com.shopee.br/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+<item component="ComponentInfo{com.shopee.ph/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+<item component="ComponentInfo{com.shopee.my/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+<item component="ComponentInfo{com.shopee.vn/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+<item component="ComponentInfo{com.shopee.th/com.shopee.app.ui.home.HomeActivity_}" drawable="shopee"/>
+-------------------------------------------------------
+Icon: Asphalt 9                Requested: 29
+<item component="ComponentInfo{com.gameloft.android.ANMP.GloftA9HM/com.gameloft.android.ANMP.GloftA9HM.MainActivity}" drawable="asphalt_9"/>    
+-------------------------------------------------------
+Icon: CamScanner               Requested: 29
+<item component="ComponentInfo{com.intsig.camscanner/com.intsig.camscanner.launcher.WelcomeDefaultActivity}" drawable="camscanner"/>
+-------------------------------------------------------
+Icon: Ecosia                   Requested: 28
+<item component="ComponentInfo{com.ecosia.android/com.google.android.apps.chrome.Main}" drawable="ecosia"/>
+-------------------------------------------------------
+Icon: Kiwi Browser             Requested: 28
+<item component="ComponentInfo{com.kiwibrowser.browser/com.google.android.apps.chrome.Main}" drawable="kiwi_browser"/>
+-------------------------------------------------------
+Icon: PUBG MOBILE LITE         Requested: 28
+<item component="ComponentInfo{com.tencent.iglite/com.epicgames.ue4.SplashActivity}" drawable="pubg_mobile_lite"/>
+-------------------------------------------------------
+Icon: JioSaavn                 Requested: 28
+<item component="ComponentInfo{com.jio.media.jiobeats/com.jio.media.mobile.apps.jiobeats.splash.SplashScreen}" drawable="jiosaavn"/>
+-------------------------------------------------------
+Icon: Office Lens              Requested: 27
+<item component="ComponentInfo{com.microsoft.office.officelens/com.microsoft.office.officelens.MainActivity}" drawable="office_lens"/>
+-------------------------------------------------------
+Icon: 9GAG                     Requested: 27
+<item component="ComponentInfo{com.ninegag.android.app/com.ninegag.android.app.ui.home.HomeActivity}" drawable="9gag"/>
+<item component="ComponentInfo{com.ninegag.android.app/com.ninegag.android.app.ui.HomeActivity}" drawable="9gag"/>
+-------------------------------------------------------
+Icon: Galaxy Themes            Requested: 26
+<item component="ComponentInfo{com.samsung.android.themestore/com.samsung.android.themestore.activity.Launcher}" drawable="galaxy_themes"/>     
+-------------------------------------------------------
+Icon: KineMaster               Requested: 26
+<item component="ComponentInfo{com.nexstreaming.app.kinemasterfree/com.nextreaming.nexeditorui.MainActivity}" drawable="kinemaster"/>
+<item component="ComponentInfo{com.nexstreaming.app.kinemasterfree/com.duapps.ad.DuAd}" drawable="kinemaster"/>
+-------------------------------------------------------
+Icon: AppGallery               Requested: 26
+<item component="ComponentInfo{com.huawei.appmarket/com.huawei.appmarket.MainActivity}" drawable="appgallery"/>
+-------------------------------------------------------
+Icon: Recorder                 Requested: 26
+<item component="ComponentInfo{com.coloros.soundrecorder/oppo.multimedia.soundrecorder.filebrowser.BrowseFile}" drawable="recorder"/>
+<item component="ComponentInfo{cn.nubia.soundrecorder.preset/cn.nubia.soundrecorder.ui.RecordingActivity}" drawable="recorder"/>
+<item component="ComponentInfo{com.android.bbksoundrecorder/com.android.activity.ReclistActivity}" drawable="recorder"/>
+<item component="ComponentInfo{com.android.bbksoundrecorder/com.android.bbksoundrecorder.SoundRecorder}" drawable="recorder"/>
+<item component="ComponentInfo{com.zui.recorder/com.zui.recorder.SoundRecorder}" drawable="recorder"/>
+<item component="ComponentInfo{com.google.android.apps.recorder/com.google.android.apps.recorder.ui.recordings.MainActivity}" drawable="recorder"/>
+<item component="ComponentInfo{com.lenovo.recorder/com.lenovo.recorder.SoundRecorder}" drawable="recorder"/>
+<item component="ComponentInfo{org.pixelexperience.recorder/org.pixelexperience.recorder.RecorderActivity}" drawable="recorder"/>
+<item component="ComponentInfo{com.coloros.soundrecorder/oppo.multimedia.soundrecorder.RecorderActivity}" drawable="recorder"/>
+-------------------------------------------------------
+Icon: Clue                     Requested: 26
+<item component="ComponentInfo{com.clue.android/com.biowink.clue.splash.SplashActivity}" drawable="clue"/>
+-------------------------------------------------------
+Icon: IRCTC Rail Connect       Requested: 26
+<item component="ComponentInfo{cris.org.in.prs.ima/cris.org.in.ima.activities.IRCTCConnectActivity}" drawable="irctc_rail_connect"/>
+-------------------------------------------------------
+Icon: JioTV                    Requested: 26
+<item component="ComponentInfo{com.jio.jioplay.tv/com.jio.media.tv.ui.permission_onboarding.PermissionActivity}" drawable="jiotv"/>
+<item component="ComponentInfo{com.jio.jioplay.tv/com.jio.jioplay.tv.activities.IndexActivity}" drawable="jiotv"/>
+-------------------------------------------------------
+Icon: Compass                  Requested: 25
+<item component="ComponentInfo{com.coloros.compass2/com.coloros.compass.flat.FlatCompass}" drawable="compass"/>
+<item component="ComponentInfo{com.reallytek.compass/com.reallytek.compass.CompassActivity}" drawable="compass"/>
+<item component="ComponentInfo{com.jrdcom.compass/com.jrdcom.compass.CompassMainActivity}" drawable="compass"/>
+<item component="ComponentInfo{com.lenovo.compass/com.lenovo.compass.CompassActivity}" drawable="compass"/>
+<item component="ComponentInfo{jlzn.com.android.compass/jlzn.com.android.compass.JLZN_CompassActivity}" drawable="compass"/>
+<item component="ComponentInfo{com.coloros.compass/com.coloros.compass.flat.FlatCompass}" drawable="compass"/>
+<item component="ComponentInfo{apps.r.compass/apps.r.compass.StartTheme.Charcoal}" drawable="compass"/>
+<item component="ComponentInfo{com.vivo.compass/com.vivo.compass.CalibrationActivity}" drawable="compass"/>
+-------------------------------------------------------
+Icon: Authenticator            Requested: 25
+<item component="ComponentInfo{com.tcs.totp/com.tcs.totp.activity.Splashscreen}" drawable="authenticator"/>
+<item component="ComponentInfo{com.azure.authenticator/com.azure.authenticator.ui.LaunchActivity}" drawable="authenticator"/>
+<item component="ComponentInfo{com.azure.authenticator/com.azure.authenticator.ui.MainActivity}" drawable="authenticator"/>
+-------------------------------------------------------
+Icon: Google Go                Requested: 24
+<item component="ComponentInfo{com.google.android.apps.searchlite/com.google.android.apps.searchlite.ui.SearchActivity}" drawable="google_go"/> 
+-------------------------------------------------------
+Icon: Santander                Requested: 24
+<item component="ComponentInfo{ar.com.santander.rio.mbanking/ar.com.santander.rio.mbanking.app.ui.activities.SplashScreenActivity}" drawable="santander"/>
+<item component="ComponentInfo{mx.bancosantander.supermovil/mx.bancosantander.supermovil.activities.SplashActivity}" drawable="santander"/>
+<item component="ComponentInfo{es.bancosantander.apps/es.bancosantander.apps.mobile.android.activities.SplashActivity}" drawable="santander"/>  
+<item component="ComponentInfo{pt.santandertotta.mobileparticulares/com.tekever.more.channel.javaandroid.presentation.control.MOREActivity}" drawable="santander"/>
+<item component="ComponentInfo{com.santander.app/com.santander.app.homenaologada.presentation.HomeActivity}" drawable="santander"/>
+<item component="ComponentInfo{}" drawable="santander"/>
+-------------------------------------------------------
+Icon: Hotstar                  Requested: 24
+<item component="ComponentInfo{in.startv.hotstar/in.startv.hotstar.rocky.launch.splash.SplashActivity}" drawable="hotstar"/>
+-------------------------------------------------------
+Icon: Notion                   Requested: 23
+<item component="ComponentInfo{notion.id/notion.local.id.MainActivity}" drawable="notion"/>
+-------------------------------------------------------
+Icon: OnePlus Switch           Requested: 23
+<item component="ComponentInfo{com.oneplus.backuprestore/com.oneplus.backuprestore.activity.BootActivity}" drawable="oneplus_switch"/>
+-------------------------------------------------------
+Icon: Axis Mobile              Requested: 23
+<item component="ComponentInfo{com.axis.mobile/com.axis.mobile.MainActivity}" drawable="axis_mobile"/>
+-------------------------------------------------------
+Icon: AppSales                 Requested: 23
+<item component="ComponentInfo{net.tsapps.appsales/net.tsapps.appsales.ui.main.MainActivity}" drawable="appsales"/>
+<item component="ComponentInfo{net.tsapps.appsales/net.tsapps.appsales.MainActivity}" drawable="appsales"/>
+-------------------------------------------------------
+Icon: DiDi                     Requested: 22
+<item component="ComponentInfo{com.didiglobal.passenger/com.didi.sdk.app.DidiLoadDexActivity}" drawable="didi"/>
+-------------------------------------------------------
+Icon: ADM                      Requested: 22
+<item component="ComponentInfo{com.dv.adm/com.dv.get.Main}" drawable="adm"/>
+-------------------------------------------------------
+Icon: Get Outlook for Andro    Requested: 22
+<item component="ComponentInfo{Error parsing request code}" drawable="get_outlook_for_andro"/>
+<item component="ComponentInfo{}" drawable="get_outlook_for_andro"/>
+-------------------------------------------------------
+Icon: Moovit                   Requested: 22   
+<item component="ComponentInfo{com.tranzmate/com.moovit.app.home.HomeActivity}" drawable="moovit"/>
+-------------------------------------------------------
+Icon: Retro Music              Requested: 22
+<item component="ComponentInfo{code.name.monkey.retromusic/code.name.monkey.retromusic.activities.MainActivity}" drawable="retro_music"/>       
+-------------------------------------------------------
+Icon: Lazada                   Requested: 22
+<item component="ComponentInfo{com.lazada.android/com.lazada.activities.EnterActivity}" drawable="lazada"/>
+-------------------------------------------------------
+Icon: ibisPaint X              Requested: 21
+<item component="ComponentInfo{jp.ne.ibis.ibispaintx.app/jp.ne.ibis.ibispaintx.app.market.MarketAuthenticationActivity}" drawable="ibispaint_x"/>
+-------------------------------------------------------
+Icon: ACMarket                 Requested: 21
+<item component="ComponentInfo{net.appcake/net.appcake.MainActivity}" drawable="acmarket"/>
+-------------------------------------------------------
+Icon: TikTok                   Requested: 21
+<item component="ComponentInfo{com.ss.android.ugc.trill/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok"/>
+<item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.aweme.splash.SplashActivity}" drawable="tiktok"/>
+-------------------------------------------------------
+Icon: Themes                   Requested: 21
+<item component="ComponentInfo{com.huawei.android.thememanager/com.huawei.android.thememanager.mvp.view.activity.onlinebase.PageActivity}" drawable="themes"/>
+<item component="ComponentInfo{com.android.thememanager/com.android.thememanager.business.startup.view.StartupActivity}" drawable="themes"/>    
+<item component="ComponentInfo{com.bbk.theme/com.bbk.theme.Theme}" drawable="themes"/>
+<item component="ComponentInfo{com.vinsmart.themestore/com.vinsmart.vthemestore.module.main.MainActivity}" drawable="themes"/>
+<item component="ComponentInfo{com.huawei.android.thememanager/com.huawei.android.thememanager.PageActivity}" drawable="themes"/>
+-------------------------------------------------------
+Icon: GuitarTuna               Requested: 21
+<item component="ComponentInfo{com.ovelin.guitartuna/com.yousician.yousiciannative.GuitarTunaActivity}" drawable="guitartuna"/>
+<item component="ComponentInfo{com.ovelin.guitartuna/com.ovelin.guitartuna.GuitarTunaActivity}" drawable="guitartuna"/>
+-------------------------------------------------------
+Icon: YouTube Go               Requested: 20
+<item component="ComponentInfo{com.google.android.apps.youtube.mango/com.google.android.apps.youtube.lite.frontend.activities.SplashActivity}" drawable="youtube_go"/>
+-------------------------------------------------------
+Icon: SNOW                     Requested: 20
+<item component="ComponentInfo{com.campmobile.snow/com.linecorp.b612.android.activity.ActivityCamera}" drawable="snow"/>
+-------------------------------------------------------
+Icon: imo                      Requested: 20   
+<item component="ComponentInfo{com.imo.android.imoim/com.imo.android.imoim.activities.Home}" drawable="imo"/>
+-------------------------------------------------------
+Icon: Photomath                Requested: 20
+<item component="ComponentInfo{com.microblink.photomath/com.microblink.photomath.main.activity.LauncherActivity}" drawable="photomath"/>        
+<item component="ComponentInfo{com.microblink.photomath/com.microblink.photomath.main.LauncherActivity}" drawable="photomath"/>
+-------------------------------------------------------
+Icon: Cricbuzz                 Requested: 20
+<item component="ComponentInfo{com.cricbuzz.android/com.cricbuzz.android.lithium.app.view.activity.NyitoActivity}" drawable="cricbuzz"/>        
+-------------------------------------------------------
+Icon: Chess                    Requested: 20
+<item component="ComponentInfo{com.chess/com.chess.splash.SplashActivity}" drawable="chess"/>
+<item component="ComponentInfo{com.jetstartgames.chess/com.jetstartgames.chess.MenuActivity}" drawable="chess"/>
+<item component="ComponentInfo{com.chess/com.chess.ui.activities.MainActivity}" drawable="chess"/>
+<item component="ComponentInfo{com.boyaa.catur/com.boyaa.catur.GameActivity}" drawable="chess"/>
+-------------------------------------------------------
+Icon: AccuWeather              Requested: 20
+<item component="ComponentInfo{com.accuweather.android/com.accuweather.android.activities.SplashActivity}" drawable="accuweather"/>
+<item component="ComponentInfo{com.accuweather.android/com.accuweather.onboarding.SplashScreen}" drawable="accuweather"/>
+-------------------------------------------------------
+Icon: Health                   Requested: 20
+<item component="ComponentInfo{com.mi.health/com.mi.health.home.HomeActivity}" drawable="health"/>
+<item component="ComponentInfo{com.huawei.health/com.huawei.health.MainActivity}" drawable="health"/>
+-------------------------------------------------------
+Icon: Cin                      Requested: 20
+<item component="ComponentInfo{c3}" drawable="cin"/>
+-------------------------------------------------------
+Icon: Where is my Train        Requested: 20
+<item component="ComponentInfo{com.whereismytrain.android/com.whereismytrain.view.activities.MainPagerActivity}" drawable="where_is_my_train"/> 
+-------------------------------------------------------
+Icon: Music                    Requested: 19
+<item component="ComponentInfo{com.android.bbkmusic/com.android.bbkmusic.WidgetToTrackActivity}" drawable="music"/>
+<item component="ComponentInfo{com.oppo.music/com.oppo.music.adutils.SplashActivity}" drawable="music"/>
+                                            erlite/com.miui.player.ui.MusicBrowserActivity}" drawable="music"/>
+
+<item component="ComponentInfo{com.skype.raider/com.skype4life.MainActivity}" drawable="skype"/>
+-------------------------------------------------------
+Icon: Forest                   Requested: 19
+<item component="ComponentInfo{cc.forestapp/cc.forestapp.applications.SplashActivity}" drawable="forest"/>
+-------------------------------------------------------
+Icon: Grindr                   Requested: 19
+<item component="ComponentInfo{com.grindrapp.android/com.grindrapp.android.HomeActivityOriginal}" drawable="grindr"/>
+<item component="ComponentInfo{com.grindrapp.android/com.grindrapp.android.HomeActivityNotes}" drawable="grindr"/>
+Total number of icons requested: 6107

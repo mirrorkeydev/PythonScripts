@@ -36,21 +36,24 @@ def get_request_code(decoded_payload, start):
 
     # iterate from first "\n" to second "\n" or 130 characters, whichever comes first
     while not(count > 130):
-        currentchar = str(decoded_payload[start + count])
+        try:
+            currentchar = str(decoded_payload[start + count])
 
-        # check for first "\n"
-        if currentchar == "\\" and not slash_n_found:
-            slash_n_found = True
-            # increment to get ahead of "\n"s "n"
-            count += 1
-        
-        # check for second "\n"
-        elif currentchar == "\\" and slash_n_found:
-            break
+            # check for first "\n"
+            if currentchar == "\\" and not slash_n_found:
+                slash_n_found = True
+                # increment to get ahead of "\n"s "n"
+                count += 1
+            
+            # check for second "\n"
+            elif currentchar == "\\" and slash_n_found:
+                break
 
-        # if the character is between the first and second "\n"
-        elif slash_n_found:
-            tempcode += currentchar
+            # if the character is between the first and second "\n"
+            elif slash_n_found:
+                tempcode += currentchar
+        except:
+            return "Error parsing request code"
 
         count += 1
     
@@ -146,7 +149,10 @@ def analyze_message(message, icon_frequency, service):
         try:
             payload = individual_message["payload"]["parts"][0]["parts"][0]["body"]["data"]
         except:
-            payload = individual_message["payload"]["parts"][0]["body"]["data"]
+            try:
+                payload = individual_message["payload"]["parts"][0]["body"]["data"]
+            except:
+                return False
 
         # decode the payload, giving the plain text body of the email
         decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","")
