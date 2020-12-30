@@ -11,9 +11,9 @@ Return: a text file with all icons' filenames in the xml format:
 
 import os,sys
 
-os.chdir("C:\\Users\\Melanie\\Documents\\GitHub\\PythonScripts\\Appstract\\xmlscript")
+os.chdir("Appstract\\xmlscript")
 
-path = "C:\\Users\\Melanie\\Documents\\Appstract\\candybar-sample-master\\app\\src\\main\\res\\drawable-nodpi"
+path = "C:\\Users\\Melanie\\Documents\\Appstract - Light - New Candybar\\app\\src\\main\\res\\drawable-nodpi"
 
 dirs = os.listdir(path)
 

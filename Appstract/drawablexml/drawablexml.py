@@ -67,7 +67,7 @@ def getColor(path):  # returns either a dominant color (roygbp) or None
   d = {}
 
   for pixel in data:
-    if pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0 and pixel[3] == 0:  # rgba for transparent
+    if pixel[3] == 0:  # rgba for transparent
       continue
     elif pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0 and pixel[3] == 255:  # rgba for pure black
       continue

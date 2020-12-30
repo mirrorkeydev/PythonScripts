@@ -16,7 +16,7 @@ import PIL, os, sys #pip install Pillow for PIL
 from PIL import Image
 import colorsys
 
-os.chdir("C:\\Users\\Melanie\\Documents\\Appstract\\candybar-sample-master\\app\\src\\main\\res\\drawable-nodpi") #this is the local directory with icons
+os.chdir("C:\\Users\\Melanie\\Documents\\Appstract - Light - New Candybar\\app\\src\\main\\res\\drawable-nodpi") #this is the local directory with icons
 
 #---------------FUNCTIONS---------------
 
@@ -54,7 +54,7 @@ def getColor(path): #returns either a dominant color (roygbp) or None
     d = {} #will contain {(color): howmanypixels, i.e. (255,255,255): 3, (0,0,0):23, ... etc}
 
     for pixel in data:
-        if pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0 and pixel[3] == 0: #rgba for transparent
+        if pixel[3] == 0: #rgba for transparent
             continue
         elif pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0 and pixel[3] == 255: #rgba for pure black
             continue
@@ -99,7 +99,7 @@ def getColor(path): #returns either a dominant color (roygbp) or None
 
 #-------CLASSIFY THE ICONS-------
 
-colors = {"red": [], "orange":[] , "yellow":[] , "green":[] , "blue":[] , "purple":[], "gray":[]}
+colors = {"red": [], "orange":[] , "yellow":[] , "green":[] , "blue":[] , "purple":[], "gray":[], "multicolored":[]}
 
 directory =  os.listdir() #returns all the filenames
 
@@ -119,10 +119,13 @@ for name in directory:
         colors["purple"].append(name)
     elif getColor(name) == "gray":
         colors["gray"].append(name)
+    else:
+        colors["multicolored"].append(name)
 
 #-------GENERATE THE XML LISTS-----
 
-f = open("C:\\Users\\Melanie\\Documents\\GitHub\\PythonScripts\\Appstract\\colorsensor\\xmloutputcolors.txt","w+")
+os.chdir("C:/Users/Melanie/Documents/pythonscripts/Appstract/colorsensor")
+f = open("xmloutputcolors.txt","w+")
 
 for color in colors:
     f.write("\n\n<category title =\"" + str(color) + "\" />")
