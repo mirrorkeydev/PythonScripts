@@ -5,19 +5,20 @@ Given: a local directory filled with png icons in the format airbnb.png, etc,
 Return: a text file with all icons' filenames in the xml format:
 
         <item drawable="airbnb" />
-        <item drawable ="bing" />
-        <item drawable = "chrome" />
+        <item drawable="bing" />
+        <item drawable="chrome" />
         ...
 
     followed by the icons organized by color in the xml format:
 
         -------------red-------------
-        <item drawable ="nameofredicon" />
-        <item drawable = "youtube" />
-        <item drawable = "netflix" />
+        <item drawable="nameofredicon" />
+        <item drawable="youtube" />
+        <item drawable="netflix" />
         ...
 """
 
+from typing import Tuple
 import PIL
 import os
 import sys
@@ -34,6 +35,7 @@ def rgb2hsv(r, g, b):  # converts rgb to hsv
   mx = max(r, g, b)
   mn = min(r, g, b)
   df = mx-mn
+  h = 0
   if mx == mn:
     h = 0
   elif mx == r:
@@ -50,7 +52,7 @@ def rgb2hsv(r, g, b):  # converts rgb to hsv
   return h, s, v
 
 
-def getMaxNum(d):  # returns key and value with the greates value in a tuple
+def getMaxNum(d) -> Tuple[Tuple, int]:  # returns key and value with the greates value in a tuple
   maximum = 0
   maxkey = ()
   for key in d:
@@ -62,7 +64,7 @@ def getMaxNum(d):  # returns key and value with the greates value in a tuple
 
 def getColor(path):  # returns either a dominant color (roygbp) or None
   # returns iterable object with pixel rgba values
-  data = list(PIL.Image.open(path, mode='r').getdata())
+  data = list(PIL.Image.open(path, mode='r').getdata()) # type: ignore
   # will contain {(color): howmanypixels, i.e. (255,255,255): 3, (0,0,0):23, ... etc}
   d = {}
 

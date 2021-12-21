@@ -35,8 +35,8 @@ def get_request_code(decoded_payload, start):
     slash_n_found = False
 
     # iterate from first "\n" to second "\n" or 130 characters, whichever comes first
-    while not(count > 130):
-        try:
+    try:
+        while not(count > 130):
             currentchar = str(decoded_payload[start + count])
 
             # check for first "\n"
@@ -52,10 +52,11 @@ def get_request_code(decoded_payload, start):
             # if the character is between the first and second "\n"
             elif slash_n_found:
                 tempcode += currentchar
-        except:
-            return "Error parsing request code"
 
-        count += 1
+            count += 1
+    
+    except:
+        tempcode = "x"
     
     return tempcode
 
@@ -70,7 +71,7 @@ def get_request_names(decoded_payload):
     icons_iter = iter(icon_match)
     icons = []
 
-    for i in range(len(re.findall("(\\\\n){2,3}", decoded_payload))):
+    for _ in range(len(re.findall("(\\\\n){2,3}", decoded_payload))):
         start = next(icons_iter).span()[1]
         
         if len(decoded_payload) - start < 10:
@@ -97,7 +98,8 @@ def get_request_names(decoded_payload):
             #fetch the icon identifier
             code = get_request_code(decoded_payload, start)
             tup = (tempstr, code)
-            icons.append(tup)
+            if len(code) > 10:
+                icons.append(tup)
 
     return icons
 
@@ -155,7 +157,7 @@ def analyze_message(message, icon_frequency, service):
                 return False
 
         # decode the payload, giving the plain text body of the email
-        decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","")
+        decoded_payload = str(base64.b64decode(payload, '-_')).replace("\\r","") # type: ignore
         
         # extract the names of the icon requests
         icons = get_request_names(decoded_payload)
@@ -176,12 +178,12 @@ Purpose: prints the top x requested icons
 """
 def top_requests(icon_frequency):
     # next, linearly search for the x most requested icons
-    x = 0
-    while(True):
-        x = int(input("View the top x requested icons. x = "))
-        if x < len(icon_frequency):
-            break
-        print("x too large! Pick an x less than " + str(len(icon_frequency)))
+    x = 1000
+    # while(True):
+    #     x = int(input("View the top x requested icons out of " + str(len(icon_frequency)) + ". x = "))
+    #     if x < len(icon_frequency):
+    #         break
+    #     print("x too large! Pick an x less than " + str(len(icon_frequency)))
 
     maxkey = ""
     ls = []
@@ -205,10 +207,20 @@ def top_requests(icon_frequency):
         temptuple = (maxkey, maxinfo)
         ls.append(temptuple)
 
+    # open a file to cache the results to
+    f = open("output.txt", "w")
+
     # print results
     print("TOP " + str(x) + " ICONS:")
 
     for item in ls:
+        # output to file
+        f.write("-------------------------------------------------------\n")
+        f.write("Icon: " + "{:25}".format(str(item[0])) + "Requested: " + "{:5}".format(str(item[1][0])) + "\n")
+        for i in range(1,len(item[1])):
+            f.write("<item component=\"ComponentInfo{" + item[1][i] + "}\" drawable=\"" + str(item[0].lower().replace(" ", "_")) + "\"/>\n")
+
+        # output to screen
         print("-------------------------------------------------------")
         print("Icon: " + "{:25}".format(str(item[0])) + "Requested: " + "{:5}".format(str(item[1][0])))
         for i in range(1,len(item[1])):
@@ -238,7 +250,7 @@ def get_credentials():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', SCOPES)
+                'C:\\Users\\Melanie\\Documents\\GitHub\\PythonScripts\\Appstract\\requestanalyzer\\credentials.json', SCOPES)
             creds = flow.run_local_server()
 
         # Save the credentials for the next run
